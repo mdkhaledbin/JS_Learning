@@ -39,3 +39,30 @@ const myFunction = function(){
 // console.log(typeof outSideTemp);
 console.log(typeof myFunction);
 
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+/*
+Stack (Primitive), Heap (Non-Primitive)
+*/
+
+let myChannel = "Khaled55"
+let anotherName = myChannel
+
+anotherName = "tatabyebye"
+
+console.log(myChannel);
+console.log(anotherName);
+
+let userOne = {
+    email: "user@gmail.com",
+    upi: "user@b=ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "khaled@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
