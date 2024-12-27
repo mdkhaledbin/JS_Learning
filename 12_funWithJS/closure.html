@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #313131;">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+<script>
+    //Lexical Scope
+    // function outer(){
+    //     let name = "Google"
+    //     function inner(){
+    //         console.log(name);
+    //     }
+    //     inner()
+    // }
+    // outer()
+
+    //Clousre
+    // function outer(){
+    //     let name = "Meta"
+    //     function inner(){
+    //         console.log(name);
+    //     }
+    //     return inner
+    // }
+
+    // const myfunc = outer()
+    // myfunc()
+</script>
+<script>
+    // document.getElementById("orange").onclick = function(){
+    //     document.body.style.backgroundColor = `orange`
+    // }
+    // document.getElementById("green").onclick = function(){
+    //     document.body.style.backgroundColor = `green`
+    // }
+
+    function onclickHandler(color){
+        // document.body.style.backgroundColor = `${color}`
+        function chngBgColor(){
+            document.body.style.backgroundColor = `${color}`
+        }
+        return chngBgColor
+    }
+
+    document.getElementById('orange').onclick = onclickHandler('orange')
+    document.getElementById('green').onclick = onclickHandler('green')
+</script>
+</html>
