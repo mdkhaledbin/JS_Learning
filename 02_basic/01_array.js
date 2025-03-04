@@ -31,7 +31,7 @@ const newArr = myArr.join()
 //******* slice splice */
 
 console.log("A ", myArr)
-const myn1 = myArr.slice(1, 3)
+const myn1 = myArr.slice(1, 3) //exclude last number, both are index
 console.log(myn1);
 
 console.log("B ", myArr);
